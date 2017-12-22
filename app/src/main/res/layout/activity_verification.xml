@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="1">
+
+
+    <TextView
+        android:id="@+id/tvWelcome"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/dp8"
+        android:gravity="center"
+        android:padding="@dimen/dp10"
+        android:text="@string/otp_verification"
+        android:textColor="@android:color/black"
+        android:textSize="@dimen/sp18"
+        android:visibility="visible" />
+
+    <EditText
+        android:id="@+id/edtOTP"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/dp8"
+        android:background="@android:drawable/edit_text"
+        android:gravity="center"
+        android:inputType="number"
+        android:textColor="@android:color/black"
+        android:textSize="@dimen/sp20"
+        android:visibility="visible" />
+
+
+    <Button
+        android:id="@+id/btnVerifyIt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/dp8"
+        android:background="@drawable/bg_blue"
+        android:text="Verify it"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/sp18"
+        android:visibility="visible"
+        tools:ignore="HardcodedText" />
+
+    <TextView
+        android:id="@+id/tvMessage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/dp10"
+        android:textColor="@android:color/black"
+        android:textSize="@dimen/sp20"
+        android:visibility="gone" />
+
+</LinearLayout>
